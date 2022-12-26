@@ -1,0 +1,202 @@
+
+:root{
+    --main-color:#443;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #b94728;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --border-radius:30% 4% ;
+    --border-radius-hover:4% 30%;
+    --border:.2rem solid var(--main-color);
+    --border-hover:.2rem dashed var(--main-color);
+}
+.menu{
+    background-color: var(--bs-gray-400);
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+ }
+ 
+ .product{
+     display:grid;
+     grid-template-columns:1fr 1fr;
+     column-gap: 10rem;
+     padding: 2rem 14%;
+     margin-left:10rem;
+     }
+     
+ .bestsellers{
+     display: flex;
+     flex-direction:column;
+    
+ }
+ .bestsellers-image img{
+     width:15.625rem;
+     height:15.625rem;
+     object-fit: cover;
+     border:var(--border);
+     border-radius:var(--border-radius);
+ }
+ .bestsellers-image img:hover{
+     border: var(--border-hover);
+     border-radius:var(--border-radius-hover);
+ }
+ .bestsellers-p{
+     text-align:left;
+     font-size:1.05rem;
+     color:var(--bs-gray-700);
+ }
+ .drinks{
+     display: flex;
+     flex-direction: column;
+ }
+ .drinks-image img{
+     width:15.625rem;
+     height: 15.625rem;
+     object-fit: cover;
+     border:var(--border);
+     border-radius:var(--border-radius)
+ }
+ .drinks-image img:hover{
+     border: var(--border-hover);
+     border-radius:var(--border-radius-hover);
+ }
+ .drinks-p{
+     text-align:left;
+     font-size:1.05rem;
+     color:var(--bs-gray-700);
+ }
+
+ .navigate{
+    width:100%;
+    height:3rem;
+    border-bottom:.0001rem solid var(--bs-gray-700) ;
+    box-shadow: .3rem .3rem .3rem var(--bs-gray-400);
+    margin-bottom: 2rem;
+}
+.navigate h3{
+    padding:.1rem .9rem;
+    font-size: .95rem;
+
+}
+.navigate p{
+    padding:.1rem .9rem;
+    font-size: .9rem;
+}
+
+
+
+.beverage-container{
+    margin-top: 0;
+    width: 416px;
+    height:232px;
+    background: #f9f9f9;
+    border:1px solid var(--bs-gray-600);
+    box-shadow:1px 1px 1px var(--bs-gray-600);
+    border-radius:3px;
+}
+.beverage-container:hover{
+    background:white;
+    box-shadow:3px 3px 3px var(--bs-gray-600);
+    border-radius:3px;
+}
+
+.beverage-img-content-cost{
+    display:grid;
+    grid-template-columns:166px 250px ;
+   
+}
+
+.beverage-image img{
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding:15px 15px 19px 20px;
+}
+.beverage-content-cost{
+    padding: 0 10px 0 0;
+    margin-top: 1.2rem;
+}
+.beverage-vegimg{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+.beverage-title{
+    color:var(--bs-teal);
+    font-size:0.9rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.beverage-message-1{
+    color:var(--bs-gray-500);
+    font-size:0.75rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.beverage-message-2{
+    color:var(--bs-gray-700);
+    font-size:0.85rem;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.beverage-costdetail{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 0;
+    color:var(--bs-gray-700);
+}
+.cost{
+    font-size:1.5rem;
+
+}
+.add-item button{
+    width:6rem;
+    height: 2rem; 
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--main-color);
+    color:white;
+
+}
+.add-item button:hover{
+    border: var(--border-hover);
+    border-radius: var(--border-radius-hover);
+}
+.beverages{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:1rem;
+    row-gap: 2rem;
+    padding-left:50px;
+    padding-right: 50px;
+}
+.Expressoa{
+    margin-bottom:3rem;
+}
+.star{
+    color:gold;
+}
+.star i{
+    font-size:15px;
+}
+.beverage-costdetail-pour{
+    position: relative;
+    bottom:10px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 0;
+    color:var(--bs-gray-700);
+}

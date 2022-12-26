@@ -1,0 +1,85 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+.btn{
+    display: inline-block;
+    padding:.9rem 1.5rem;
+    border-radius: var(--border-radius);
+    color:var(--main-color);
+    background: none;
+    border:var(--border);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    border-radius: var(--border-radius-hover);
+    border:var(--border-hover);
+    
+}
+
+
+header{
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:1.3rem 5%;
+    z-index: 1000;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.header .navbar a{
+    margin: 0rem .9rem;
+    font-size:1.3rem;
+}
+.header .logo{
+    font-size:1.6rem;
+    text-transform: capitalize;
+    color:var(--main-color);
+}
+.header .logo i{
+    font-size:1.6rem;
+    text-transform: capitalize;
+    color:var(--main-color);
+}
+.header .navbar a{
+    font-size: 1.5rem;
+    color:var(--main-color);
+    margin-left: 1.5rem;
+}
+.header .navbar a:hover{
+    color:black;
+}
+ .header .icons{
+    margin: 0 .3rem;
+ }
+ .header .icons a{
+    font-size: 1.5rem;
+    color:var(--main-color);
+    margin-left: 1.5rem;
+}
+.header .icons a:hover{
+    color:black;
+}
+.header .btn{
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+html{
+
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}

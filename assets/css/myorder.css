@@ -1,0 +1,103 @@
+:root{
+    --main-color:#443;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #b94728;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --border-radius:30% 4% ;
+    --border-radius-hover:4% 30%;
+    --border:.2rem solid var(--main-color);
+    --border-hover:.2rem dashed var(--main-color);
+}
+
+.orders-header{
+    display:grid;
+    grid-template-columns:130px 3fr 100px 250px 200px;
+    padding: 1rem 8%;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--bs-gray-700);
+    margin-bottom:1.5rem ;
+    color: var(--bs-orange);
+    font-size: 1.1rem;
+   }
+.Yourcart{
+    padding: 1rem 4%;
+    margin-bottom: 2rem;
+}
+.heading-cart{
+    margin-bottom:1.5rem ;
+    color: var(--bs-orange);
+    padding: 1rem 4%;
+    margin-bottom: 2rem;
+}
+.beverage{
+    border-bottom: 1px solid var(--bs-gray-700);
+}
+.beverage-container{
+    display:grid;
+    grid-template-columns:130px 3fr 100px 250px 200px;
+    padding-bottom:30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.beverage-image img{
+    width:80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius:.4rem;
+}
+.beverage-content{
+    margin-top: 5px;
+}
+
+.beverage-title{
+    margin-top:0;
+    margin-bottom:14px;
+    font-size: 1rem;
+    color: var(--bs-teal);
+}
+.beverage-message{
+    margin-top:0;
+    margin-bottom:4px;
+    font-size:0.85rem;
+    color:var(--bs-gray-600)
+}
+.cost{
+    font-size:0.95rem;
+    color:var(--bs-orange);
+    margin-top:0;
+    margin-bottom:4px;
+}
+.beverage-costdetail{
+    margin-top:5px;
+}
+.delivery-status{
+    color:var(--bs-gray-800);
+    font-size:1.1rem;
+}
+.beverage-costdetail a{
+    color:var(--bs-teal);
+    font-size:1rem;
+   position: relative;
+   top:19px;
+}
+.ordered-date{
+    color:var(--bs-gray-600);
+    font-size:1rem;
+   position: relative;
+   top:20px;
+}
+.quantity{
+    position: relative;
+    top:20px;
+}
