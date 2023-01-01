@@ -11,34 +11,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  
-    <link rel="stylesheet" href="../../assets/css/addtocart.css ">
+    
+    <link rel="stylesheet" href="../../assets/css/payment.css">
     <link rel="stylesheet" href="../../assets/css/header.css">
     <link rel="stylesheet" href="../../assets/css/footer.css ">
+
 </head>
 <body>
+<!-- header section starts  -->
+        <header class="header">
 
-    <header class="header">
+            <a href="../../index.html" class="logo"> The Caffine factory <i class="fas fa-mug-hot"></i> </a>
+        
+            <nav class="navbar">
+                <a href="../../index.html">Home</a>
+                <a href="../../pages/order/order-bestseller.html">Order</a>
+                <a href="../../pages/payment/payment.html">Pay</a>
+                <a href="../../pages/My orders/myorders.html">My orders</a>
+             <!--<a href="../../pages/blogs/blog.html">Blogs</a>--> 
+            </nav>
+             <div class="icons">
+             <a href="../../pages/add to cart/addtocart.html" class="fas fa-shopping-cart"></a>
+             <a href="../../pages/profile/profile.html" class="fas fa-user"></a>
+    </div>
+            <a href="../../pages/login/login.html" class="btn">Login</a>
+        
+        </header>
+        <section class="profile" id="profile">
 
-        <a href="../../index.html" class="logo"> The Caffine factory <i class="fas fa-mug-hot"></i> </a>
-    
-        <nav class="navbar">
-            <a href="../../index.html">Home</a>
-            <a href="../../pages/order/order-bestseller.html">Order</a>
-            <a href="../../pages/payment/payment.html">Pay</a>
-            <a href="../../pages/My orders/myorders.html">My orders</a>
-            <a href="../../pages/blogs/blog.html">Blogs</a>
-        </nav>
-         <div class="icons">
-         <a href="../../pages/add to cart/addtocart.html" class="fas fa-shopping-cart"></a>
-         <a href="../../pages/profile/profile.html" class="fas fa-user"></a>
-</div>
-        <a href="../../pages/login/login.html" class="btn">Login</a>
-    
-    </header>
-
-        <section>
-            <a href="../../pages/confirmation/delivery-confirmation.html"><button>confirmorder</button></a>
+            <h1 class="heading">payment </h1>
+         
+            <form action="">
+                <label><input type="radio" name="yes_no"> UPI</label>
+                <input type="text" placeholder="Enter your UPI ID" class="box">
+                <label><input type="radio" name="yes_no"> Credit/Debit card </label>
+                <input type="number" placeholder="Enter your card number" class="box">
+                <div class="credit">
+                  <div class="credit-1">  <input type="number" placeholder="MM" class="box1"></div>
+                   <div class="credit-1"> <input type="number" placeholder="YY" class="box1"></div>
+                    <div class="credit-1"><input type="number" placeholder="CVV" class="box1"></div>
+                </div>
+                <label><input type="radio" name="yes_no"> Net banking</label>
+                <select class="box" " >
+                    <option >Choose your bank</option>
+                    <option >HDFC bank</option>
+                    <option >Axis bank</option>
+                    <option >State bank of India</option>
+                    <option > Indian bank</option>
+                    <option >Kotak Mahindra bank</option>
+                    <option >ICICI bank</option>
+                    
+                    <option >Other banks</option>
+                </select>
+                <label ><input type="radio" name="yes_no"> Cash on delivery</label>
+             
+               
+        <div>
+                <button  class="btn"> <a href="../../pages/confirmation/delivery-confirmation.html">CONFIRM</a>      </button>
+                <span class="save">
+                    <button  class="btn">  <a href="../../index.html"> Cancel</a>  </button></span>
+                </div>
+            </form>
+        
         </section>
-        <body>
-         </html>
+
+        </body>
