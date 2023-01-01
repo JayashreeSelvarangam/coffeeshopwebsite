@@ -1,0 +1,142 @@
+:root{
+    --main-color:#443;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #b94728;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    --border-radius-hover:4% 95% 6% 95%/95% 4% 92% 5%;
+    --border:.2rem solid var(--main-color);
+    --border-hover:.2rem dashed var(--main-color);
+}
+body{
+    background:hsl(0, 0%, 100%) ;
+    background: url('../../assets/image/bgcoffee.jpg') repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.heading{
+    font-size: 3rem;
+    color:transparent;
+    -webkit-text-stroke: 0.05rem var(--bs-pink);
+    background: none;
+    text-align: center;
+    margin-top:.7rem 0;
+    letter-spacing:.04rem ;
+}
+
+.home-site form{
+    width:100vh;
+    height:640px;
+    margin:4rem auto 4rem auto;
+    padding:3rem;
+    background:var(--bs-gray-400);
+    border:5px solid var(--bs-pink);
+    border-radius:5px;
+    color: var(--bs-pink);
+}
+.form{
+    margin-top: 3rem;
+}
+label{
+    font-size:2rem;
+}
+.box{
+    width:500px;
+    padding:.75rem .65rem;
+    border:var(--border);
+    border-radius: 1px;
+
+        color: rgb(245, 60, 91) ;
+        background-color:var(--bs-gray-400);
+}
+input[type=text]{
+    font-size: 1.5rem;
+}
+.name{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
+.image{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
+.label-name{
+    margin-top: 1rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    margin-top:20px;
+}
+input[type=file]{
+    padding:1rem .95rem;
+}
+.box-2{
+    width:500px;
+    padding:.75rem .65rem;
+    border:var(--border);
+    border-radius: 1px;
+    color: rgb(245, 60, 91) ;
+    background-color: none;
+}
+.box-2::-webkit-file-upload-button{
+    color:#fff;
+    padding:.55rem 1.1rem;
+    border:none;
+    border-radius:50px;
+   cursor:pointer;
+    
+    
+    
+    background-image: linear-gradient(45deg,rgb(219, 40, 70),rgb(245, 155, 155));
+}
+
+textarea{
+    width: 500px;
+    height: 240px;
+    border: var(--border);
+    padding:.75rem .65rem;
+    border:var(--border);
+    border-radius: 1px;
+    resize: vertical;
+        color: rgb(245, 60, 91) ;
+        background-color: var(--bs-gray-400);
+}
+::placeholder{
+    font-size: 1rem;
+    color:var(--bs-pink)
+}
+.submit{
+    color:#fff;
+    padding:1.15rem 1.40rem;
+    border:none;
+    border-radius:50px;
+   cursor:pointer;
+   background-image: linear-gradient(45deg,rgb(219, 40, 70),rgb(245, 155, 155));
+}
+.edit-btn{
+color:#fff;
+padding:1.15rem 1.40rem;
+border:none;
+border-radius:50px;
+cursor:pointer;
+position: relative;
+left: 200px;bottom: 10px;
+background-image: linear-gradient(45deg,rgb(219, 40, 70),rgb(245, 155, 155));
+}

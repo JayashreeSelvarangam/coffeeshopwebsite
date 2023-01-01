@@ -31,12 +31,7 @@
     position: relative;
 }
 
-label{
-    font-size: 1.6rem;
-    background:none;
-    text-transform: none;
-    color:var(--main-color);
-}
+
 .profile{
     background:url(../image/book-bg.jpg) repeat ;
     background-position: center;
@@ -52,7 +47,12 @@ label{
     padding:3rem;
     border:var(--border);
 }
-
+label{
+    font-size: 1.6rem;
+    background:none;
+    text-transform: none;
+    color:var(--main-color);
+}
 .profile form .box{
     width:100%;
     padding:1rem 1.2rem;
@@ -70,4 +70,7 @@ label{
 }
 .save{
     margin-left: 300px;
+}
+a{
+    color:var(--main-color);
 }

@@ -21,12 +21,15 @@
 }
 
 *{
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-   
     transition: all .2s linear;
 }
 .btn{
@@ -34,11 +37,10 @@
     padding:.9rem 1.5rem;
     border-radius: var(--border-radius);
     color:var(--main-color);
- 
     background: none;
     border:var(--border);
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: .5rem;
     font-size: 1.7rem;
 }
 
@@ -47,8 +49,18 @@
     border:var(--border-hover);
     
 }
+html{
 
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
 
+section{
+    padding:2rem 9%;
+}
+
+/* header sectionn */
 header{
     position:sticky;
     top:0;
@@ -58,7 +70,7 @@ header{
     justify-content:space-between;
     align-items: center;
     padding:1.3rem 5%;
-    z-index: 1000;
+    z-index: 1;
     background:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -74,7 +86,7 @@ header{
 }
 .header .logo i{
     font-size:1.6rem;
-    text-transform: capitalize;
+    
     color:var(--main-color);
 }
 .header .navbar a{
@@ -97,20 +109,12 @@ header{
     color:black;
 }
 .header .btn{
-    margin-top: 0;
+     margin-top: 0;
     font-size: 1.3rem;
 }
-html{
 
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
-}
-
-section{
-    padding:2rem 9%;
-}
-
+/* header section*/
+/*home*/
 .home{
     width: 100%;
     min-height: 30vh;
@@ -118,8 +122,7 @@ section{
     background: url(../image/home-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-     position: relative;
-    bottom:8rem;
+    
 }
 .home .row{
     display: flex;
@@ -136,7 +139,6 @@ section{
 
 .home .row .image{
     flex:1 1 42rem;
-    padding-top: 10rem;
     text-align: center;
 }
 
@@ -150,7 +152,7 @@ section{
         transform: translateY(0rem);
     }
     50%{
-        transform: translateY(-12rem);
+        transform: translateY(-10rem);
     }
 }
 .home .row .content h3{
@@ -370,9 +372,7 @@ section{
     color:var(--main-color);
 }
 
-.footer .box-container .box a i{
-    padding-right: .5rem;
-}
+
 
 .footer .box-container .box a:hover i{
     padding-right: 2rem;

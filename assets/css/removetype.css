@@ -20,6 +20,22 @@
     --border:.2rem solid var(--main-color);
     --border-hover:.2rem dashed var(--main-color);
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display:none;
+    position: absolute;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding:  1rem 2rem;
+    z-index: 1;
+    background-color: white;
+  }
+  .dropdown:hover .dropdown-content{
+    display:block;
+  }
 .heading{
     font-size: 3rem;
     text-transform: uppercase;
@@ -30,29 +46,29 @@
     top:50px;
     position: relative;
 }
-.customer{
-    font-size: 1rem;
-    -webkit-text-stroke: .05rem var(--main-color);
-    letter-spacing: .2rem;
-    text-align: center;
-    color:transparent;
-}
+
 
 .profile{
-    background:url(../image/book-bg.jpg) no-repeat;
+    background:url(../image/book-bg.jpg) repeat ;
     background-position: center;
     background-size: cover;
-    height:100vh;
+    height:100vh ;
+    
 }
 
 .profile form{
-    margin:6rem auto 2rem auto;
-    max-width: 45rem;
+    margin:4rem auto 4rem auto;
+    max-width: 40rem;
     border-radius:5px;
     padding:3rem;
     border:var(--border);
 }
-
+label{
+    font-size: 1.6rem;
+    background:none;
+    text-transform: none;
+    color:var(--main-color);
+}
 .profile form .box{
     width:100%;
     padding:1rem 1.2rem;
@@ -68,14 +84,10 @@
 .profile form .box:focus{
     border:var(--border-hover);
 }
-
-.profile form textarea{
-    height:25rem;
-    resize: none;
-}
-.ratings{
-    margin-bottom: 1.5rem;
+.save{
+    margin-left: 300px;
 }
 a{
     color:var(--main-color);
 }
+
