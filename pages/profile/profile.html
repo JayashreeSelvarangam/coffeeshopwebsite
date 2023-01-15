@@ -20,8 +20,9 @@
 <body>
 <!-- header section starts  -->
         <header class="header">
-
-            <a href="../../index.html" class="logo"> The Caffine factory <i class="fas fa-mug-hot"></i> </a>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <a href="../../index.html" class="logo"> Coffee<i class="fas fa-mug-hot"></i> </a>
         
             <nav class="navbar">
                 <a href="../../index.html">Home</a>
@@ -43,13 +44,13 @@
          
             <form action="">
                 <label>Name:</label>
-                <input type="text" placeholder="Scarlet" class="box">
-                <label>Email-id:</label>
-                <input type="email" placeholder="scarlet123@gmail.com" class="box">
+                <input type="text" value="Scarlet" id="name" class="box">
+                <label>Email_id:</label>
+                <input type="email" value="scarle123@gmail.com" id="email" class="box">
                 <label>Password:</label>
-                <input type="password" placeholder="..........." class="box">
+                <input type="password" value="scarlet123" id="password"class="box">
                 <label>Mobile number:</label>
-                <input type="text" placeholder="9785645644" class="box">
+                <input type="text" value="9785645644"  id="mobilenumber" class="box">
         
                
                 
@@ -63,4 +64,18 @@
         </section>
 
         </body>
+
+        <script>
+             
+
+const Name= document.getElementById("name").value
+const Email_id= document.getElementById("email").value
+const Password= document.getElementById("password").value
+const Mobile_number= document.getElementById("mobilenumber").value
+console.log(Name)
+console.log(Email_id)
+console.log(Password)
+console.log(Mobile_number)
+</script>
+        
         </html>

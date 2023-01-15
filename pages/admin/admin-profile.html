@@ -77,18 +77,18 @@
      
         <form action="">
             <label>Name:</label>
-            <input type="text" placeholder="Jayashree" class="box">
+            <input type="text" value="Jayashree" id="name" class="box">
            
            
             <label>Email-ID:</label>
-            <input type="email" placeholder="js454@gmail.com" class="box">
+            <input type="email" value="js454@gmail.com" id="email" class="box">
            
             <label>Password</label>
-            <input type="password" placeholder="............" class="box">
+            <input type="password" value="jaya123" id="password"  class="box">
             <label>Mobile number:</label>
-            <input type="number" placeholder="7865745231" class="box">
+            <input type="number" value="7865745231" id="mobilenumber"class="box">
             <label>Address:</label>
-            <input type="text" placeholder="No 4,anna nagar,chennai." class="box">
+            <input type="text" value="No 4,anna nagar,chennai." id="address"class="box">
             
     
            
@@ -103,3 +103,16 @@
     </section>
 </section>
 </body>
+<script>
+             
+
+    const Name= document.getElementById("name").value
+    const Email_id= document.getElementById("email").value
+    const Password= document.getElementById("password").value
+    const Mobile_number= document.getElementById("mobilenumber").value
+    console.log(Name)
+    console.log(Email_id)
+    console.log(Password)
+    console.log(Mobile_number)
+    </script>
+</html>

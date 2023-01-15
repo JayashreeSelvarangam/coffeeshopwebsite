@@ -77,18 +77,18 @@
      
         <form action="">
            
-            <input type="text" placeholder="Name" class="box">
+            <input type="text" value="Jayashree" id="name"placeholder="Name" class="box">
            
            
             
-            <input type="email" placeholder="Email-id" class="box">
+            <input type="email"  value="js123@gmail.com" id="email" placeholder="Email_id" class="box">
            
 
-            <input type="password" placeholder="Password" class="box">
+            <input type="password" value="jaya123" id="password"placeholder="Password" class="box">
 
-            <input type="Confirm-password" placeholder="Confirm-password" class="box">
+            <input type="Confirm-password" value="jaya123" id="confirm_password"placeholder="Confirm-password" class="box">
             
-            <input type="text" placeholder="Mobile number" class="box">
+            <input type="text" value="9943521234"placeholder="Mobile_number" id="mobilenumber" class="box">
             
     
            
@@ -102,3 +102,15 @@
     </section>
 </section>
 </body>
+<script>
+
+const Name= document.getElementById("name").value
+const Email_id= document.getElementById("email").value
+const Password= document.getElementById("password").value
+const Mobile_number= document.getElementById("mobilenumber").value
+console.log(Name)
+console.log(Email_id)
+console.log(Password)
+console.log(Mobile_number)
+</script>
+</html>
