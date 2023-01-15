@@ -91,3 +91,64 @@ grid-template-columns: 1fr 1fr 2fr;;
 button{
     margin-top: 50px;
 }
+
+header #toggler{
+    display: none;
+ }
+ 
+ header .fa-bars{
+     font-size: 1rem;
+     color:#333;
+     border-radius: .10rem;
+     padding:.1rem .5rem;
+     cursor: pointer;
+     border:.1rem solid rgba(0,0,0,.3);
+     display: none;
+ }
+
+@media (max-width:412px){
+    html{
+        font-size:75%;
+    }
+    
+    section{
+        padding:1rem;
+    }
+    header{
+        padding:.1rem;
+    }
+    header .fa-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path:polygon(0 0, 0 0, 0 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        display:block;
+    }
+    .profile{
+        
+        height:100vh ;
+        
+    }
+    .btn{
+        font-size:.5rem;
+        padding:1rem;
+        margin:.1rem .1rem;
+     }
+
+     .save{
+        margin-left: 15px;
+    }
+    }

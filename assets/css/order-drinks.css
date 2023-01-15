@@ -215,3 +215,86 @@
     margin-top: 0;
     margin-bottom:3rem; 
 }
+header #toggler{
+    display: none;
+ }
+ 
+ header .fa-bars{
+     font-size: 1rem;
+     color:#333;
+     border-radius: .10rem;
+     padding:.1rem .5rem;
+     cursor: pointer;
+     border:.1rem solid rgba(0,0,0,.3);
+     display: none;
+ }
+
+@media (max-width:412px){
+    html{
+        font-size:80%;
+    }
+    
+    section{
+        padding:1rem;
+    }
+    header{
+        padding:.1rem;
+    }
+    header .fa-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path:polygon(0 0, 0 0, 0 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        display:block;
+    }
+    .beverages{
+        grid-template-columns: 1fr;
+        padding-left:10px;
+        padding-right: 50px;
+    }
+    section{
+        padding-right: .6rem;
+    }
+    .product{
+        grid-template-columns: 1fr;
+        
+    }
+    .beverage-image img{
+        width: 120px;
+        height:140px;
+        object-fit: cover;
+    }
+    .drinks{
+        position: relative;
+        right: 7rem;
+    }
+    .bestsellers{
+       position: relative;
+       right: 7rem;
+    }
+    .beverage-container{
+        width:100%;
+    }
+    .beverage-img-content-cost{
+        display:grid;
+        grid-template-columns:130px 250px ;
+        
+    }
+    .coffee-content{
+        padding-left: 1rem;
+    }
+  
+}

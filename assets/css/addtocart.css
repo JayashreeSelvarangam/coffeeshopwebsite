@@ -339,3 +339,127 @@ input[type=radio]{
 .pay-container span{
     margin-left: 9px;
 }
+header #toggler{
+    display: none;
+ }
+ 
+ header .fa-bars{
+     font-size: 1rem;
+     color:#333;
+     border-radius: .10rem;
+     padding:.1rem .5rem;
+     cursor: pointer;
+     border:.1rem solid rgba(0,0,0,.3);
+     display: none;
+ }
+
+@media (max-width:412px){
+    html{
+        font-size:75%;
+    }
+    
+    section{
+        padding:1rem;
+    }
+    header{
+        padding:.1rem;
+    }
+    header .fa-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path:polygon(0 0, 0 0, 0 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        display:block;
+    }
+    .btn{
+        font-size:1rem;
+        padding:1rem;
+        margin:.1rem .1rem;
+     }
+    .beverage{
+        width: 100%;
+    }
+    .beverage-container{
+        display:grid;
+        grid-template-columns:50px .9fr .9fr 10px;
+        font-size: 1rem;
+    }
+    .beverage-image img{
+        width:40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius:.4rem;
+        position: relative;
+        right:30px ;
+    }
+  
+    .beverage-message{
+        display: none;
+    }
+     .latest h3{
+        display:none; 
+     }
+     .latest{
+        display: flex;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          width:100%;
+     }
+     .latest-recommendation{
+    
+        height:250px;
+     }
+     .delivery{
+        position: relative;
+        right: 25px;
+     }
+     .inc-dec-button button{
+        padding: 5px 10px 5px 10px;
+        border: 1px solid var(--bs-orange);
+        margin-top: 20px;
+    }
+    
+    .inc-dec-button .minus i{
+        margin-right:5px;
+        font-size:15px;
+       
+    }
+    
+    .inc-dec-button .plus i{
+        margin-left:5px;
+        font-size:15px;
+     
+    }
+    .inc-dec-button span{
+        font-size:15px;
+     
+    }
+    .change-address button{
+        padding:10px 15px 10px 15px;
+        font-size: 15px;
+        
+    }
+    .button-value button{
+        padding:8px  13px 8px 13px;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .coffee-content{
+        padding-left: 1rem;
+    }
+}
+
+

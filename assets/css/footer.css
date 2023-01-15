@@ -35,3 +35,12 @@ footer{
 .footer .box-container .box a:hover i{
     padding-right: 2rem;
 }
+@media (max-width:412px){
+        
+ 
+    .footer .box-container{
+        grid-template-columns: 1fr;
+       
+    }
+
+}

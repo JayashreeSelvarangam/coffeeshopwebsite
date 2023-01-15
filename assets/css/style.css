@@ -147,14 +147,15 @@ header{
     animation: float 4s linear infinite;
 }
 
-@keyframes float{
+ /* @keyframes float{
     0%, 100%{
         transform: translateY(0rem);
     }
     50%{
         transform: translateY(-10rem);
-    }
-}
+    } 
+} */
+
 .home .row .content h3{
     font-size: 3rem;
     color:var(--main-color);
@@ -376,4 +377,120 @@ section{
 
 .footer .box-container .box a:hover i{
     padding-right: 2rem;
+}
+
+header #toggler{
+    display: none;
+ }
+ 
+ header .fa-bars{
+     font-size: 1rem;
+     color:#333;
+     border-radius: .10rem;
+     padding:.1rem .5rem;
+     cursor: pointer;
+     border:.1rem solid rgba(0,0,0,.3);
+     display: none;
+ }
+
+@media (max-width:412px){
+    html{
+        font-size:75%;
+    }
+    
+    section{
+        padding:1rem;
+    }
+    header{
+        padding:.1rem;
+    }
+    header .fa-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path:polygon(0 0, 0 0, 0 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        display:block;
+    }
+    .latest{
+        display: flex;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          width:100%;
+        
+     }
+     .latest-recommendation{
+        height: 60%;
+     }
+     .btn{
+        font-size:1rem;
+        padding:1rem;
+        margin:.1rem .1rem;
+     }
+     .latest h3 {
+        display: none;
+        }
+        .content h3,a{
+            position: relative;
+            bottom: 5%;
+        }
+    .image{
+        display: none;
+    }
+    .right-content .content-2{
+       display: none;
+    }
+    .about .row{
+        display: block;
+        
+    }
+
+    .about .row .content h3{
+        font-size: 2.5rem;
+        padding-top: 3rem;
+        padding-left: 3rem;
+    }
+
+    .about .content span
+    {
+        font-size: 2.5rem;
+    }
+    
+    .about .row .video-container{
+        width: 350px;
+        height:360px;
+       margin-left: 5%;
+    }
+    
+    .about .row .content p{
+        font-size: 1.5rem; 
+        padding:2rem 5%;
+    }
+    .about .row .video-container h3{
+        margin-left: 3%;
+        font-size: 1.7rem;
+    }
+    .footer .box-container{
+        grid-template-columns: 1fr;
+
+    }
+    .coffee-content{
+        padding-left: 1rem;
+    }
+    .box{
+        margin-left: 15%;
+    }
+
 }
