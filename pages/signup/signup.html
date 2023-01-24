@@ -47,40 +47,56 @@
             <form action="">
                
                
-                <input type="text" value="Jayashree" id="name"placeholder="Name" class="box">
+                <input type="text"  id="name" placeholder="Name" class="box">
            
            
             
-                <input type="email"  value="js123@gmail.com" id="email" placeholder="Email_id" class="box">
+                <input type="email"   id="email" placeholder="Email-Id"  class="box">
                
     
-                <input type="password" value="jaya123" id="password"placeholder="Password" class="box">
+                <input type="password"  id="password" placeholder="Password" class="box">
     
-                <input type="Confirm-password" value="jaya123" id="confirm_password"placeholder="Confirm-password" class="box">
+                <input type="password" id="confirm_password" placeholder="Confirm-password" class="box">
                 
-                <input type="text" value="9943521234"placeholder="Mobile_number" id="mobilenumber" class="box">
-                
+                <input type="text"  id="mobilenumber" placeholder="Mobile number" class="box">
+                <button class="btn" onclick="submit()"> Signup </button>
+                <div>
+                    <p class="sign">If your are already a customer <a href="../../pages/login/login.html">Login</a></p>
+                    </div>
         
                
-                 
-                <button class="btn"> <a href="../../index.html">Signup</a> </button>
-                <div>
-                <p class="sign">If your are already a customer <a href="../../pages/login/login.html">Login</a></p>
+               
+                
         
             </form>
-        
+              
+ 
         </section>
 
         </body>
         <script>
+            function submit(){
+                const  userName = document.getElementById("name").value;
+                const  email = document.getElementById("email").value;
+                const  password = document.getElementById("password").value;
+                const  confirmPassword = document.getElementById("confirm_password").value;
+                const  mobileNumber = document.getElementById("mobilenumber").value;
 
-            const Name= document.getElementById("name").value
-            const Email_id= document.getElementById("email").value
-            const Password= document.getElementById("password").value
-            const Mobile_number= document.getElementById("mobilenumber").value
-            console.log(Name)
-            console.log(Email_id)
-            console.log(Password)
-            console.log(Mobile_number)
+                console.log(userName);
+                console.log(email);
+                console.log(password);
+                console.log( confirmPassword);
+                console.log(mobileNumber);
+
+               window.location.href="../../index.html";
+
+                localStorage.setItem("name",userName)
+                localStorage.setItem("email",email)
+                localStorage.setItem("password",password)
+                localStorage.setItem("confirm_Password",confirmPassword)
+                localStorage.setItem("mobile_Number",mobileNumber)
+            }
+
+        
             </script>
         </html>

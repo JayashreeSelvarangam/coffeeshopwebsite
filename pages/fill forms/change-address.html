@@ -45,14 +45,14 @@
          
             <form action="">
                
-                <input type="text" placeholder="Name" class="box">
+                <input type="text" placeholder="Name" id="name"class="box">
                
                
 <!--                 
                 <input type="text" placeholder="Mobile number" class="box">
                 -->
 
-                <input type="password" placeholder="Password" class="box">
+                <input type="password" placeholder="Password" id="password" class="box">
 
                 <!-- <input type="text" placeholder="District" class="box">
                 
@@ -60,12 +60,28 @@
                 
                 <input type="text" placeholder="State" class="box"> -->
                 
-                <textarea name="" placeholder="Add your address" class="box" id="" cols="30" rows="10"></textarea>
-                <button class="btn"><a href="../../pages/add to cart/addtocart.html">Submit</a> </button> 
-                
+                <textarea name="" placeholder="Add your address" class="box" id="address" cols="30" rows="10"></textarea>
+               
+                <button class="btn" onclick="submit()"><a href="../../pages/add to cart/addtocart.html">Submit</a> </button>  
         
             </form>
-        
+           
         </section>
 
         </body>
+        <script>
+             function submit(){
+                const  userName = document.getElementById("name").value;
+                const  password = document.getElementById("password").value;
+                const  changeAddress = document.getElementById("address").value;
+                
+                console.log(userName);
+               console.log(password);
+                console.log( changeAddress);
+
+                localStorage.setItem("name",userName)
+                localStorage.setItem("password",password)
+                localStorage.setItem("address",changeAddress)
+             }
+        </script>
+        </html>

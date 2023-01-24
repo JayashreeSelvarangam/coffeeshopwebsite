@@ -1,0 +1,9 @@
+{
+
+    "main_img":"string",
+    "main_content":"string",
+    "main_names":"string",
+    "sub_content":"string",
+    "link_pages":"string",
+    "cost_items":"string"    
+    }

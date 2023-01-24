@@ -46,14 +46,14 @@
          
             <form action="">
                 <label>Username:</label>
-                <input type="text" value="Jayashree" id="username" placeholder="" class="box">
+                <input type="text"  id="username" placeholder="" class="box">
                 <label>Password:</label>
-                <input type="email" value="Jayashree123" id="password" placeholder="" class="box">
+                <input type="email"  id="password" placeholder="" class="box">
                 
         
                
                  
-               <button class="btn"> <a href="../../index.html">Login</a> </button>
+               <button class="btn" onclick="submit()"> Login</button>
                 <div>
                 <p class="sign">If your are new customer <a href="../../pages/signup/signup.html">sign up</a></p>
             </div>
@@ -63,10 +63,15 @@
 
         </body>
         <script>
+            function submit(){
            const username= document.getElementById("username").value;
            const password= document.getElementById("password").value;
 
            console.log(username)
            console.log(password)
+
+           window.location.href="../../index.html";
+            }
+
         </script>
         </html>

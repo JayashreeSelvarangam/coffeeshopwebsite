@@ -50,6 +50,7 @@
         <form action="">
      <div class="customer">
         <p class="ratings">Your ratings:</p>
+        
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
@@ -60,10 +61,27 @@
            
     
 
-        <textarea name="" placeholder="Write your valuable feedback here" class="box" id="" cols="30" rows="10"></textarea>
+        <textarea name="" placeholder="Write your valuable feedback here" class="box" id="review" cols="30" rows="10"></textarea>
 
       <button class="btn"><a href="../../index.html">Submit</a> </button> 
 
     </form>
 
 </section>
+</body>
+<script>
+    function submit(){
+       const  review = document.getElementById("review").value;
+    
+    //    const  changeAddress = document.getElementById("address").value;
+       
+       console.log(review);
+    //   console.log(password);
+    
+
+       localStorage.setItem("review",review);
+    //    localStorage.setItem("password",password)
+     window.location.href="../../index.html";
+    }
+</script>
+</html>

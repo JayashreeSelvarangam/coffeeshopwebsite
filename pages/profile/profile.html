@@ -44,13 +44,13 @@
          
             <form action="">
                 <label>Name:</label>
-                <input type="text" value="Scarlet" id="name" class="box">
+                <input type="text" id="name" class="box">
                 <label>Email_id:</label>
-                <input type="email" value="scarle123@gmail.com" id="email" class="box">
+                <input type="email"  id="email" class="box">
                 <label>Password:</label>
-                <input type="password" value="scarlet123" id="password"class="box">
+                <input type="password"  id="password"class="box">
                 <label>Mobile number:</label>
-                <input type="text" value="9785645644"  id="mobilenumber" class="box">
+                <input type="text"  id="mobilenumber" class="box">
         
                
                 
@@ -66,16 +66,20 @@
         </body>
 
         <script>
-             
+  const name= localStorage.getItem("name");
+  const email= localStorage.getItem("email");
+  const password= localStorage.getItem("password");
+  const number= localStorage.getItem("mobile_Number");
+  console.log(name);
+  console.log(email);
+  console.log(password);
+  console.log(number);
 
-const Name= document.getElementById("name").value
-const Email_id= document.getElementById("email").value
-const Password= document.getElementById("password").value
-const Mobile_number= document.getElementById("mobilenumber").value
-console.log(Name)
-console.log(Email_id)
-console.log(Password)
-console.log(Mobile_number)
+
+  document.getElementById("name").value= name
+  document.getElementById("email").value= email
+  document.getElementById("password").value= password
+  document.getElementById("mobilenumber").value= number
 </script>
         
         </html>
