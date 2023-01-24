@@ -1,3 +1,5 @@
+
+
 :root{
     --main-color:#443;
     --bs-pink: #d63384;
@@ -190,10 +192,10 @@
     color:white;
 
 }
-.add-item button:hover{
+/* .add-item button:hover{
     border: var(--border-hover);
     border-radius: var(--border-radius-hover);
-}
+} */
 .beverages{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
@@ -202,11 +204,44 @@
     padding-left:50px;
     padding-right: 50px;
 }
+.beverages1{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:1rem;
+    row-gap: 2rem;
+    padding-left:50px;
+    padding-right: 50px;
+}
+.beverages2{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:1rem;
+    row-gap: 2rem;
+    padding-left:50px;
+    padding-right: 50px; 
+}
+.beverages3{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:1rem;
+    row-gap: 2rem;
+    padding-left:50px;
+    padding-right: 50px; 
+}
+.beverages4{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:1rem;
+    row-gap: 2rem;
+    padding-left:50px;
+    padding-right: 50px; 
+}
 /* frappucino*/
 .Frappucino{
     margin-top: 0;
     margin-bottom:3rem;
 }
+/*brewed*/
 .Brewedcoffee{
     margin-top: 0;
     margin-bottom:3rem;
@@ -228,7 +263,7 @@ header #toggler{
      border:.1rem solid rgba(0,0,0,.3);
      display: none;
  }
-
+/*responsive*/
 @media (max-width:412px){
     html{
         font-size:80%;

@@ -35,11 +35,11 @@ section{
     font-size: .85rem;
 }
 
-.btn-button:hover{
+/* .btn-button:hover{
     border-radius: var(--border-radius-hover);
     border:var(--border-hover);
     
-}
+} */
 
 body{
     background-image: url(../../assets/image/menu-bg.jpg);
@@ -56,7 +56,6 @@ body{
 
 .about-product .row .image{
     flex:1 1 22rem;
-  
 }
 
 .about-product .row .image img{
@@ -113,11 +112,11 @@ body{
     border-radius: var(--border-radius);
     margin-top: 15px;
 }
-.inc-dec-button button:hover{
+/* .inc-dec-button button:hover{
     border-radius: var(--border-radius-hover);
     border:var(--border-hover);
     
-}
+} */
 .inc-dec-button .minus i{
     margin-right:15px;
     font-size:15px;
@@ -226,10 +225,10 @@ body{
     color:white;
 
 }
-.add-item button:hover{
+/* .add-item button:hover{
     border: var(--border-hover);
     border-radius: var(--border-radius-hover);
-}
+} */
 /* customer review*/
 .customer-review{
     border:var(--border);
@@ -239,11 +238,11 @@ body{
     padding:15px 20px 15px 20px;
    
 }
-.customer-review:hover{
+/* .customer-review:hover{
     
     border:var(--border-hover);
     border-radius: var(--border-radius-hover);
-}
+} */
 .review-writer{
     text-align: center;
     font-size: 1.5rem;

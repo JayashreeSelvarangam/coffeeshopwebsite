@@ -250,10 +250,10 @@ header{
     color:white;
 
 }
-.add-item button:hover{
+/* .add-item button:hover{
     border: var(--border-hover);
     border-radius: var(--border-radius-hover);
-}
+} */
 .about .row{
     display: grid;
     grid-template-columns:1fr 1fr;
