@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee shop </title>
+
+   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css ">
+
+</head>
+<body>
+<section class="profile" id="profile">
+    <form >
+        <label>Name:</label>
+        <input type="text" id="name" class="box">
+        <label>Email_id:</label>
+        <input type="email"  id="email" class="box">
+        <label>Password:</label>
+        <input type="password"  id="password"class="box">
+        <label>Mobile number:</label>
+        <input type="number"  id="mobilenumber" class="box">
+
+    </form>
+    <button  class="btn" onclick="on_submit()">Save
+    </button>
+</section>
+    
+
+</body>
+<script>
+    function on_submit(){
+     const user_name=document.getElementById("name").value;
+    const email=document.getElementById("email").value;
+    const password=document.getElementById("password").value;
+    const mobile_number=document.getElementById("password").value;
+
+    console.log(user_name);
+    console.log(email);
+    console.log(password);
+    console.log(mobile_number);
+
+    
+    }
+   
+</script>

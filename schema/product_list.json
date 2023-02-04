@@ -1,6 +1,8 @@
 {
-    "name": "string",
-    "description": "string",
+        "name": "string",
+        "category": "string",
+        "category_description":"string",
+        "description": "string",
         "quantities": [
             {
                 "name": "string",
@@ -12,9 +14,11 @@
            
         ],
         "image": {
-            "source": "string",
-               "alt":"string"
+            "source": "string"
+
         },
         "price": "number",
         "currency": "string"
+
+
 }

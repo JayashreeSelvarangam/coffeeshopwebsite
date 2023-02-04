@@ -59,21 +59,21 @@
                 <input type="password" id="confirm_password" placeholder="Confirm-password" class="box">
                 
                 <input type="text"  id="mobilenumber" placeholder="Mobile number" class="box">
+             
                 <button class="btn" onclick="submit()"> Signup </button>
                 <div>
                     <p class="sign">If your are already a customer <a href="../../pages/login/login.html">Login</a></p>
                     </div>
         
                
-               
+
                 
         
             </form>
-              
+            
  
         </section>
-
-        </body>
+         </body>
         <script>
             function submit(){
                 const  userName = document.getElementById("name").value;
@@ -88,13 +88,14 @@
                 console.log( confirmPassword);
                 console.log(mobileNumber);
 
+
                window.location.href="../../index.html";
 
-                localStorage.setItem("name",userName)
-                localStorage.setItem("email",email)
-                localStorage.setItem("password",password)
-                localStorage.setItem("confirm_Password",confirmPassword)
-                localStorage.setItem("mobile_Number",mobileNumber)
+                localStorage.setItem("name",userName);
+                localStorage.setItem("email",email);
+                localStorage.setItem("password",password);
+                localStorage.setItem("confirm_Password",confirmPassword);
+                localStorage.setItem("mobile_Number",mobileNumber);
             }
 
         

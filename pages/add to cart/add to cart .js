@@ -2,7 +2,7 @@
 //       const user_name= localStorage.getItem("name");
 //       const address= localStorage.getItem("address");
  
-//       console.log(user_name);
+//    console.log(user_name);
 //    console.log(address);
  
    
