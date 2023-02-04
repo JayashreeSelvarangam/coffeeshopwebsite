@@ -300,6 +300,26 @@ header #toggler{
         padding-left:10px;
         padding-right: 50px;
     }
+    .beverages1{
+        grid-template-columns: 1fr;
+        padding-left:10px;
+        padding-right: 50px;
+    }
+    .beverages2{
+        grid-template-columns: 1fr;
+        padding-left:10px;
+        padding-right: 50px;
+    }
+    .beverages3{
+        grid-template-columns: 1fr;
+        padding-left:10px;
+        padding-right: 50px;
+    }
+    .beverages4{
+        grid-template-columns: 1fr;
+        padding-left:10px;
+        padding-right: 50px;
+    }
     section{
         padding-right: .6rem;
     }
